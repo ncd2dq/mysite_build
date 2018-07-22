@@ -1,0 +1,11 @@
+The jinja library is used with Flask and it auto escapes any data
+that is rendered in the HTML templates
+
+this means it's safe t render user input as any values that could mess with HTML
+are auto escaped but look the same in the users browser
+
+{{ }} encapsulates expressions that will be output to the final document
+{% %} denotes control flow statements like IF and FOR
+
+unlike python, blocks are denoted by start and end tags rather than indentation
+this is because static text within a block could change indentation

@@ -1,0 +1,19 @@
+To run the app
+-make sure you've activated the venv
+-change directory to the top level parent directory "mysite_full"
+-set FLASK_APP=mysite
+-set FLASK_ENV=development #lets changes happen live
+flask run
+
+###Bash is basically mac/linux
+export FLASK_APP=mysite
+export FLASK_ENV=development
+flask run
+
+
+
+
+#every time you run the app
+start the virtual environment / set FLASK_APP and set FLASK_ENV
+
+\venv\Scripts\activate

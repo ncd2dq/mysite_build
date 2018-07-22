@@ -1,0 +1,7 @@
+MANIFEST.in
+mysite.egg-info/PKG-INFO
+mysite.egg-info/SOURCES.txt
+mysite.egg-info/dependency_links.txt
+mysite.egg-info/not-zip-safe
+mysite.egg-info/requires.txt
+mysite.egg-info/top_level.txt

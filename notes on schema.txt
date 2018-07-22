@@ -1,0 +1,29 @@
+# this file establishes the schema of the database
+# create all the tables, establish the datatypes held in each
+# establish the length of each column
+
+DROP TABLE IF EXISTS user;
+DROP TABLE IF EXISTS scores;
+
+CREATE TABLE user (
+	id INTEGER PRIMARY KEY AUTOINCREMENT,
+	username TEXT UNIQUE NOT NULL,
+	password TEXT NOT NULL
+);
+
+#not null means you cannot add a new row without supplying a value for
+#this field
+
+#autoincrement means that a new value will be generated each time
+#a row is added
+
+#foreign key means that this value is equivalent to another table's
+#primary key (can be used for joins)
+CREATE TABLE scores (
+	id INTEGER PRIMARY KEY AUTOINCREMENT,
+	user_id INTEGER NOT NULL,
+	game_name TEXT NOT NULL,
+	score INTEGER NOT NULL,
+	accomplished TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,
+	FOREIGN KEY (user_id) REFERENCES user (id)
+)

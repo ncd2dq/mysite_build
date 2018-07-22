@@ -1,0 +1,4 @@
+include mysite/schema.sql
+graft mysite/static
+graft mysite/templates
+global-exclude *.pyc

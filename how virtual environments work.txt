@@ -1,0 +1,25 @@
+#A virtual environment is an entirely independent bundle of libraries
+so that you can control what libraries are used for your project.
+
+For example, a new library might break backwards compatibility, so you
+would not want a new library installation to automatically be applied to your project.
+
+
+Make a project directory:
+-mkdir myproject
+-cd myproject
+
+When inside directory, make a virtual environment
+-python -m venv venv
+
+Then you need to activate the virtual environment
+-venv\Scripts\activate
+
+install Flask within the virtual env
+-pip install Flask
+
+as long as you see (venv) you are in the virtual env
+
+
+
+###Bash is basically mac/linux

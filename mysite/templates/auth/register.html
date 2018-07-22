@@ -1,0 +1,19 @@
+{% extends 'base.html' %}
+
+{% block header %}
+	<h1>{% block title%}Register{% endblock %}</h1>
+{% endblock %}
+
+{% block content %}
+	<form method="post">
+		<label for="username">Username</label>
+		<input name="username" id="username" required>
+		<label for="password">Password</label>
+		<input type="password" name="password" id="password" required>
+		<input type="submit" value="Register">
+	</form>
+{% endblock %}
+
+<!--extends tells Jinja that this template should replace the blocks from the base template -->
+<!--all the rendered content must appear in block tags that ovveride those from the base template -->
+<!--required attribute makes sure the browser doesn't submit until values are filled in -->
